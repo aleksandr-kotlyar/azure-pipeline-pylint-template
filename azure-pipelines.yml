@@ -35,11 +35,3 @@ steps:
     pylint $(pwd)
     rm __init__.py
   displayName: 'pylint $pwd'
-
-- script: |
-    pylnt .
-  displayName: 'pylint . fail without init'
-
-- script: |
-    pylint $(pwd)
-  displayName: 'pylint $pwd fail without init'
